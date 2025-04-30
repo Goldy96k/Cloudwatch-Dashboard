@@ -1,0 +1,33 @@
+# 📊 AWS CloudWatch Dashboard - EC2 Monitoring
+
+## 🔍 Problem Statement
+
+You work for XYZ Corporation. To maintain the security of the AWS account and the resources, you have been asked to implement a solution that allows easy monitoring of different users. Specifically, you will monitor the machines (EC2 instances) created by users for any errors or misconfigurations.
+
+---
+
+## ✅ Tasks Performed
+
+1. **Created a CloudWatch Dashboard**  
+   → Name: `EC2-Monitoring-Dashboard`
+
+2. **Added Monitoring Widgets to Dashboard**  
+   - **CPU Utilization** of a specific EC2 instance  
+   - **Network In/Out Metrics** for the same EC2 instance
+
+---
+
+## 🛠️ Key Steps
+
+- Navigated to **Amazon CloudWatch** from the AWS Console  
+- Created a new **dashboard** and selected the **EC2 instance** to monitor  
+- Added two widgets:  
+  - **Line graph for CPUUtilization**  
+  - **Line graph for NetworkIn & NetworkOut**  
+- Saved the dashboard for ongoing monitoring
+
+---
+
+## 📌 Outcome
+
+This dashboard allows quick visual tracking of the instance's performance. It helps detect high CPU usage, poor networking performance, or unexpected behavior in real-time.
