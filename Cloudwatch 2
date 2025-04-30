@@ -1,0 +1,45 @@
+# AWS CloudWatch Alarms Assignment
+
+## 🔍 Problem Statement
+You work for XYZ Corporation. To maintain the security of the AWS account and its resources, you need to implement monitoring solutions for user-created EC2 instances and overall billing charges.
+
+---
+
+## ✅ Tasks Performed
+
+1. **CloudWatch Billing Alarm**  
+   - Created an alarm that triggers when estimated AWS charges exceed **$500**.
+
+2. **CloudWatch CPU Utilization Alarm**  
+   - Created an alarm for an EC2 instance that enters the **ALARM** state when CPU utilization exceeds **65%**.  
+   - Configured an **SNS topic** and subscription so that notifications are sent to responsible personnel when the threshold is crossed.
+
+---
+
+## 🛠️ Steps Followed
+
+1. **Billing Alarm**  
+   - Navigated to **CloudWatch → Alarms → Create Alarm**  
+   - Chose **“Billing” → Total Estimated Charge** metric  
+   - Set threshold to **GreaterThanThreshold = 500** USD  
+   - Configured actions to notify via an SNS topic
+
+2. **CPU Utilization Alarm**  
+   - Navigated to **CloudWatch → Alarms → Create Alarm**  
+   - Selected **EC2 → Per-Instance Metrics → CPUUtilization** for the target instance  
+   - Set threshold to **GreaterThanThreshold = 65%** over a 5-minute period  
+   - Created or selected an existing **SNS topic**, and subscribed an email endpoint  
+   - Attached the action so that a notification is sent when the alarm state is triggered
+
+---
+
+## 📌 AWS Services Used
+- **Amazon CloudWatch** (Alarms, Metrics, Billing)  
+- **Amazon SNS** (Topics & Subscriptions)
+
+---
+
+## 🎯 Outcome
+- **Real-time billing monitoring** in place to alert when costs exceed budget limits.  
+- **Instance health monitoring** configured to send immediate alerts on high CPU usage.  
+- **Automated notifications** ensure prompt response to potential cost spikes or performance issues.
